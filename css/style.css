@@ -359,7 +359,7 @@ h3 {
 
 .overlay {
 	position: relative;
-	z-index: 9;
+	
 }
 .overlay:before,
 .overlay2:before,
