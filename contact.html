@@ -132,25 +132,22 @@
 						<div class="col-lg-5">
 							<div class="contact-form-dv">
 								<h3 class="sc-title float-none">Leave us a message</h3>
-                                <form action="mail.php" method="post" enctype="multipart/form-data" id="reservationbooking">
-                                    <div class="form-group">
-                                        <div class="response"></div>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" name="name" class="form-control name" placeholder="Name" required>
-                                    </div><!--form-group end-->
-                                    <div class="form-group">
-                                        <input type="email" name="email" class="form-control email" placeholder="Email" required>
-                                    </div><!--form-group end-->
-                                    <div class="form-group">
-                                        <input type="number" name="phone" class="form-control email" placeholder="Phone" required>
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea name="message" class="form-control" placeholder="Write us your message"></textarea>
-                                    </div><!--form-group end-->
-                                    <button id="Submitbtn" type="submit" class="btn-default blue-clr" >Send Message<span></span></button>
-
-                                </form>
+                              <!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/mdoyyrqk"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
 							</div><!--contact-form-dv end-->
 						</div>
 						<div class="col-lg-7">
