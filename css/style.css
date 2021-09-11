@@ -203,6 +203,10 @@ h3 {
 .banner-bg7 {
 	background-image: url(../images/resources/bg11.jpg);
 }
+.banner-bg71 {
+	background-image: url(../images/resources/bg110.jpg);
+   
+}
 .banner-bg8 {
 	background-image: url(../images/resources/banner-bg8.png);
 	background-size: inherit;
@@ -3362,7 +3366,7 @@ header.style2.hp5 nav ul li:last-child a {
 }
 .main-banner.style7 .banner-text2 > h2 {
 	font-size: 150px;
-	margin-bottom: 23px;
+	margin-bottom: 0px;
 	margin-top: 2px;
 	position: relative;
 	left: -7px;
