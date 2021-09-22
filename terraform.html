@@ -1,4 +1,4 @@
-﻿﻿
+﻿
 <!DOCTYPE html>
 <html lang="en">
 <!-- Mirrored from csvisual.com/demo/octavian/html/portfolio-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Sep 2021 04:08:41 GMT -->
@@ -106,7 +106,6 @@
                     <h3>Ansible With Terraform</h3>
                     <ul class="breacrumb">
                         <li><a href="index.html" title="">Home </a></li>
-
                         <li><a href="events.html" title="">Events </a></li>
                         <li><span>Ansible With Terraform</span></li>
                     </ul><!--breacrumb end-->
@@ -140,7 +139,6 @@
                                                 Terraform provisioners
                                             </li>
                                             <li>  How to use provisioners in Ansible?</li>
-
                                         </ul>
                                     </p>
                                     <!--shared-socio end-->
@@ -161,7 +159,6 @@
                                             <h4>Category:</h4>
                                             <span>Expert Section</span>
                                         </li>
-
                                     </ul>
                                 </div><!--pft-widget end-->
                             </div>
@@ -171,31 +168,29 @@
                                 <div class="project-description">
                                     <p>
                                         <span style="font-weight:800">Terraform - </span> Open source tool from Hashicorp for infrastructure provisioning and management.
-Infrastructure as a Code.
-Provisions resources like Storage, Compute resources in cloud.
-Uses Declarative configuration language known as HCL.
-Resources are available in hashicorp websites.
+                                        Infrastructure as a Code.
+                                        Provisions resources like Storage, Compute resources in cloud.
+                                        Uses Declarative configuration language known as HCL.
+                                        Resources are available in hashicorp websites.
 
 
                                     </p>
                                     <p>
                                         <span style="font-weight:800">Ansible -  </span>Open source automation tool.
-Uses yaml language.
-Make use of playbooks.
-Uses modular structure.
-Simple, Agentless (No need to configure agents in the target machines).
-Almost all IT resources are able to manage through Ansible.
+                                        Uses yaml language.
+                                        Make use of playbooks.
+                                        Uses modular structure.
+                                        Simple, Agentless (No need to configure agents in the target machines).
+                                        Almost all IT resources are able to manage through Ansible.
 
 
                                     </p>
-
                                     <p>
                                         <span style="font-weight:800">Comparison -  </span>Terraform has a state file which tracks the desired state and actual state, whereas Ansible doesn’t have a state file to track current infrastructure state.
 
 
 
                                     </p>
-
                                     <p>
                                         <span style="font-weight:800">Terraform + Ansible -  </span>
                                         <br />
@@ -217,12 +212,10 @@ Almost all IT resources are able to manage through Ansible.
                                     </li>
                                     <li><p>Can easily modify iaac code</p></li>
                                     <li><p>We only need to change the code and terraform will take care of the rest.</p></li>
-
                                     <li><p>What is the purpose of ansible in terraform?</p></li>
                                     <li><p>We use provider to create resources in respective platforms</p></li>
-
                                     <li><p>We have provisioners and providers</p></li>
-                                    
+
                                     </ul>
 
 
@@ -230,32 +223,32 @@ Almost all IT resources are able to manage through Ansible.
 
                                     <p>
                                         <span style="font-weight:800">Provisioners -  </span>File, Local and Remote.
-Local:- Only modifying inside a local machine
-Remote:- Used when we need to execute changes on remote machines.
-File
-     -     Destroy Time provisioner :- Provisioner runs inside destroy commands only (eg: playbooks for Taking Backups)
-      </p>
-
+                                        Local:- Only modifying inside a local machine
+                                        Remote:- Used when we need to execute changes on remote machines.
+                                        File
+                                        -     Destroy Time provisioner :- Provisioner runs inside destroy commands only (eg: playbooks for Taking Backups)
+                                    </p>
 
                                     <p>
-                                        <span style="font-weight:800"> 3 Types of Remote operation
- </span>
-                                        <br/>
                                         <span style="font-weight:800">
-                                            Inline :- </span> This is a list of command strings. They are executed in the order they are provided
-                                            File, Local and Remote.
-                                        <br/>
+                                            3 Types of Remote operation
+                                        </span>
+                                        <br />
+                                        <span style="font-weight:800">
+                                            Inline :-
+                                        </span> This is a list of command strings. They are executed in the order they are provided
+                                        File, Local and Remote.
+                                        <br />
                                         <span style="font-weight:800">
                                             Script  :-
                                         </span>a local script that will be copied to the remote resource and then executed.
-                                        <br/>
+                                        <br />
                                         <span style="font-weight:800">
                                             Scripts  :-
                                         </span>a list of paths (relative or absolute) to local scripts that will be copied to the remote resource and then executed.
 
-                                         
-</p>
 
+                                    </p>
                                     <p>
                                         <span style="font-weight:800">
                                             How Ansible connects to a newly created instance from Terraform?
@@ -265,30 +258,31 @@ File
                                         <span style="font-weight:800">
                                             Local Method :-
                                         </span>Needs Ansible and Terraform in the same local machine.
-Can use already set up ssh keys (like keypairs in AWS).
+                                        Can use already set up ssh keys (like keypairs in AWS).
 
                                         <br />
                                         <span style="font-weight:800">
                                             Remote Method :-
 
                                         </span>Automatically install Ansible (using commands in the user data section) in the newly created instance and execute playbooks on the remote system.
-Inventory can be dynamically taken from the metadata of the cloud provider
-This method is good for Windows machines as Ansible is not available on windows natively.
+                                        Inventory can be dynamically taken from the metadata of the cloud provider
+                                        This method is good for Windows machines as Ansible is not available on windows natively.
 
-                                       
+
                                     </p>
 
-
-                                    <p>Ansible playbooks are very good for error handling in configuration managements
-                                    <br/>
+                                    <p>
+                                        Ansible playbooks are very good for error handling in configuration managements
+                                        <br />
                                         <span style="font-weight:800">
-                                            Best Practice :- </span> Mention correct versions of Terraform providers and terraform binary
-                                    <br/>
-                                            OnFailure = continue (if anything happens to provisioners, Terraform will continue)
-                                    <br/>
-                                            Terraform cloud is a paid feature for teams
+                                            Best Practice :-
+                                        </span> Mention correct versions of Terraform providers and terraform binary
+                                        <br />
+                                        OnFailure = continue (if anything happens to provisioners, Terraform will continue)
+                                        <br />
+                                        Terraform cloud is a paid feature for teams
 
-</p>
+                                    </p>
                                     <p>
                                         <span style="font-weight:800">
                                             Best Use case for Terraform + Ansible :-
@@ -301,19 +295,27 @@ This method is good for Windows machines as Ansible is not available on windows 
                                         For cloning existing environments.
 
                                     </p></li>
-                                    <li><p>Provisions infrastructure using Terraform and Managing configurations using Ansible.
-</p></li>
-                                    <li><p>In Hybrid Infrastructure provision and management ( Cloud + Onprem ).
-</p></li>
+                                    <li>
+                                        <p>
+                                            Provisions infrastructure using Terraform and Managing configurations using Ansible.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            In Hybrid Infrastructure provision and management ( Cloud + Onprem ).
+                                        </p>
+                                    </li>
                                     <li>
                                         <p>
                                             In Migration projects.
 
                                         </p>
                                     </li>
-                                    <li><p>Eg:- Self Managed Kubernetes cluster provisioning and configuring.
-</p></li>
-                                   
+                                    <li>
+                                        <p>
+                                            Eg:- Self Managed Kubernetes cluster provisioning and configuring.
+                                        </p>
+                                    </li>
 
                                     </ul>
 
@@ -340,9 +342,7 @@ This method is good for Windows machines as Ansible is not available on windows 
     })();
                                 </script>
                                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
                             </div>
-
                         </div>
                     </div><!--portfolio-page end-->
                     <div class="related-posts">
@@ -353,16 +353,13 @@ This method is good for Windows machines as Ansible is not available on windows 
                                     <a href="ansible.html" target="_blank">
                                         <img src="images/resources/post6.png" alt="">
 
-
                                     </a>
-
                                 </div><!--related-post end-->
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-6 col-12">
                                 <div class="related-post">
                                     <a href="chaos.html" target="_blank">
                                         <img src="images/resources/post4.jpg" alt="">
-
                                     </a>
                                 </div><!--related-post end-->
                             </div>
@@ -370,7 +367,6 @@ This method is good for Windows machines as Ansible is not available on windows 
                                 <div class="related-post">
                                     <a href="kubernetes.html" target="_blank">
                                         <img src="images/resources/post7.jpg" alt="">
-
                                     </a>
                                 </div><!--related-post end-->
                             </div>
@@ -381,15 +377,15 @@ This method is good for Windows machines as Ansible is not available on windows 
         </section><!--page-content end-->
 
         <footer>
-			<div class="top-footer">
-				<div class="container">
-					<div class="tp-content">
-						<div class="row">
+            <div class="top-footer">
+                <div class="container">
+                    <div class="tp-content">
+                        <div class="row">
                             <div class="col-lg-5 col-md-4 col-sm-6">
                                 <div class="widget widget-about">
                                     <img src="images/logo.png" alt="">
                                     <p>DevOps Malayalam is such kind of a place where you will meet people with different levels of skill sets and knowledge, who are always ready to help each other. </p>
-  <!--social_links end-->
+                                    <!--social_links end-->
                                 </div><!--widget-about end-->
                             </div>
                             <div class="col-lg-3 col-md-3 col-sm-6">
@@ -401,7 +397,6 @@ This method is good for Windows machines as Ansible is not available on windows 
                                         <li><a href="events.html" title="">Events</a></li>
                                         <li><a href="contact.html" title="">Contact Us</a></li>
                                         <li><a href="privacy.html" title="">Privacy Policy</a></li>
-                                        
 
                                     </ul>
                                 </div><!--widget-links end-->
@@ -409,10 +404,8 @@ This method is good for Windows machines as Ansible is not available on windows 
                             <div class="col-lg-4 col-md-5 col-sm-12">
                                 <div class="widget widget-contact">
                                     <h3 class="widget-title">Contact Us</h3>
-
                                     <ul>
                                         <li>Email: devopskerala@gmail.com</li>
-
                                     </ul>
                                     <ul class="social_links">
                                         <li><a href="https://www.facebook.com/DevOpsMalayalam" title=""><i class="fab fa-facebook-f"></i></a></li>
@@ -421,23 +414,23 @@ This method is good for Windows machines as Ansible is not available on windows 
                                         <li><a href="https://t.me/joinchat/xKwUbnmqyRw5ZTk1" title=""><i class="fab fa-telegram"></i></a></li>
                                         <li><a href="https://chat.whatsapp.com/BfevNo02vNmGehDfjamLFU" title=""><i class="fab fa-whatsapp"></i></a></li>
                                         <li><a href="https://youtube.com/channel/UC2Ed4a2EWJJGsRctTUCO6oA" title=""><i class="fab fa-youtube"></i></a></li>
-</ul>
+                                    </ul>
                                 </div><!--widget-contact end-->
                             </div>
-	
-                        	</div>
-					</div><!--tp-content end-->
-				</div>
-			</div><!--top-footer end-->
-			<div class="bottom-footer">
-				<div class="container">
-					<div class="bt-footer">
-						<p>Copyright © 2021 , Designed by <a href="index.html" title="">DevOps Malayalam</a> All Rights Reserved.</p>
-						<a href="#" title="" class="scrollTop gradient-bg3"><i class="fa fa-rocket"></i></a>
-					</div><!--bt-footer end-->
-				</div>
-			</div><!--bottom-footer end-->
-		</footer><!--footer end-->
+
+                        </div>
+                    </div><!--tp-content end-->
+                </div>
+            </div><!--top-footer end-->
+            <div class="bottom-footer">
+                <div class="container">
+                    <div class="bt-footer">
+                        <p>Copyright © 2021 , Designed by <a href="index.html" title="">DevOps Malayalam</a> All Rights Reserved.</p>
+                        <a href="#" title="" class="scrollTop gradient-bg3"><i class="fa fa-rocket"></i></a>
+                    </div><!--bt-footer end-->
+                </div>
+            </div><!--bottom-footer end-->
+        </footer><!--footer end-->
     </div><!--wrapper end-->
 
     <script src="js/jquery.min.js"></script>
