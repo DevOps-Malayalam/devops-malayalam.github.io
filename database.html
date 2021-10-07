@@ -148,15 +148,18 @@
                                     <h4 style="font-size:large">Topics Discussed:</h4>
                                     <p>
                                         <ul class="oct-lzt">
-                                            <li>
-                                                What is and Why Version Control?
-                                            </li>
-                                            <li>
-                                                Types of Version Control
-                                            </li>
-                                            <li>
-                                                Version Control in GitHub
-                                            </li>
+                                            <li> What is Database</li>
+                                            <li>Evolution of data in software industry</li> 
+                                            <li>Types of Database - RDBMS vs NoSQL</li> 
+                                            <li> Choosing the right type of database - ACID Compliance vs Eventuak consistency</li>
+                                            <li> Data partitioning : Vertical partitioning vs Horizontal</li>
+                                            <li>SQL : What is it? </li>
+                                            <li> Select/Update/Delete </li>
+                                            <li>Joins</li> 
+                                            <li>Advanced concepts :  Procedure or function</li> 
+                                            <li>Indexing the data</li>
+                                            <li> Designing an efficient and normalized scheme</li>
+                                            <li> ORM or native libraries</li>
                                            
 
                                         </ul>
@@ -170,13 +173,13 @@
                                         <li>
                                             <h4>Main Speaker:</h4>
                                             <span>
-                                                Sudheep Muraleedharan
+                                               Naizam Olakara
                                              
                                             </span>
                                         </li>
                                         <li>
                                             <h4>Date :</h4>
-                                            <span>22nd September 2021</span>
+                                            <span>29th September 2021</span>
                                         </li>
                                         <li>
                                             <h4>Category:</h4>
@@ -191,81 +194,225 @@
                             <div class="col-lg-12">
                                 <div class="project-description">
                                     <p>
-                                        All software is written in code. We need to save that code. Once it's done, we need to
-                                        change or make changes to code. So we will save it as test1/new1 i.e with new names.
-                                        If there is only one file it's manageable. If there are more files, it's hard to manage. And this
-                                        same case comes when there are more people contributing to one file.
-                                        <br /> We implement version control as the solution for these problems. It has a database and it
-                                        tracks all the changes.Version control is available for documentation, pictures etc. History tracking is a type of
-version control.
-                                       
-
+                                        Software’s Primary objective is to act on data
                                     </p>
                                 <p>
                                     <span style="font-weight:600">
-                                        Why do we use Version Control ? </span>
+                                        In Memory Data - </span>
+                                   
+                                    The process will be processed in in memory. When
+                                    you close its lost
                                     <br/>
-                                    ● Mainly for long term history
+                                    <span style="font-weight:600">
+                                        Persistent Data -
+                                    </span>
+                                    Here once all the process is completed the data
+                                    can be saved. The data is persistent. Some naive ways of persisting
+                                    data,
                                     <br/>
-                                    ● Traceability<br />
-                                    ● Branching and merging<br />
-                                    ● Addition of any number of people/contributors<br />
+                                    1. Serialization
+                                    <br/>
+                                    2. File storage
+                                   <br />
+                                    Problems of the above 2:- restoring is slow, searching through is slow.
+                                    the solution to the above problem is a database.
+                                    <br/>
+                                    ● Evolution of data in softwares<br />
+                                    ○ Traditionally, banks/telecom vendors were the biggest
+                                    number of customers.<br />
+                                    ○ Country specific deployments<br />
+                                    ○ Few millions of rows of data was considered big data.<br />
+                                    ○ What changed then?<br />
+                                    ■ Social media across the globe.<br />
+                                    ■ Machine learning.<br />
+                                    ○ What happened with the growth of data? Previously
+                                    thought solutions became obsolete or not enough.
+                                    <br />
 </p>
 
                                     <p>
-                                        <span style="font-weight:600">
-                                            Different types of version control
-                                        </span>
-                                        <br />
-                                        ● Initially, the particular file can be editable by the creator only. It's the first generation.
-                                     <br/>
-                                           ● Next generation version control software is client level.<br />
-                                        Multiple people can make changes.<br />
-                                        If the server is down, no change can be done.<br />
-                                        We take files from the server to make the changes and we finally merge it.
-                                        <br /> ● Third generation version control<br />
-                                        It's distributed and fast.<br />
-                                        e.g : Git, Mercury<br />
-                                        ● Distributed version control <br/>
-                                        Repository - it's a database. It contains different versions of the file. We set up this
-                                        repository locally. That is called cloning.
-                                        <br />
+                                        ● Evolution of databases<br />
+                                        ○ RDBMS- solved all the problems of early softwares.<br />
+                                        ■ Relational database<br />
+                                        ■ Normalized for optimized storage<br />
+                                        ■ A predefined schema.<br />
+
+                                        ■ Collection of columns is a table.<br />
+                                        ■ Collection of tables and other objects are a schema.<br />
+                                        ■ Examples:- Oracle, MySQL, Postgres and few more.<br />
+                                        ■ Vertical scaling.- . When data increases we can add ram,
+                                        storage, processing etc. We can make it more powerful But it's costly.
+                                        And there will be a fixed limit.<br />
+                                        ■ Costly.<br />
+                                        ■ Functions, Procedures, triggers support.<br />
                                         </p>
                                 <p>
-                                        1. Clone - To get files from repo to the local system. Then we get a working copy. Here
-                                        we can add, edit, delete.<br />
-                                        2. Commit - git commit We will make the changes to the local repository. Each commit
-                                        have a unique id<br />
-                                        3. Checkout - To pull <br />
-                                        4. dif - to know the difference in local and system repository <br />
-                                        5. Branch - it has the same set of files. Useful when one person is testing and another
-                                        person is checking bugs. Once it's done they can merge it. <br />
-                                    </p>
+                                    ○ NoSQL databases <br/>
+                                    ■ Big amounts of data. - analysis, social media etc.<br />
+                                    ■ Unstructured data:- example a social media post, its
+                                    comments, likes etc. Survey responses, Documents
+                                    like pdf/text contents <br />
+                                    ■ Ambiguous, difficult to parse.<br />
+                                    ■ Various types:- Each of these solves one type of
+                                    problem. Examples:-<br />
+                                    ● Key-value store - dynamo db, Redis,
+                                    Memcache<br />
+                                    ● Document database - mongo db. Each
+                                    document has its own structure.<br />
+                                    ● Graph database:- Neo4J. Social graph, vertices
+                                    and edges.<br />
+                                    ● Wide column databases:- Cassandra, BigTable
+                                    etc.
+                                    <br />
+                                    ■ Horizontal scaling.<br />
+                                    ■ Cheap              </p>
 
 
                                   
                                     <p>
-                                        Git - by Linux Community <br/>
-                                        GitHub, Gitlab, DevOps Repo <br />
-                                        git init- to create a local repo. <br />
-                                        git clone - git clone <filelink> <br />
-                                            to clone the remote repo to our system
-                                            remote repo will be origin in GitHub<br />
-                                            git add - to add or connect it with repo git add .<br />
-                                            git commit - to add all the files to local repo<br />
-                                            git push - to make the changes to remote repo<br />
-                                            git pull - to makes changes to local repo<br />
-                                            git checkout - to switch between branches.<br />
-                                            git branch - to create new branch<br />
-                                            merge - we can merge to a particular branch. We will get a combination of both branches.
-                                            Merging is Git's way of putting a forked history back together again. The git merge command
-                                            lets you take the independent lines of development created by git branch and integrate them
-                                            into a single branch <br />
-                                            rebase - to rewrite. Rebasing is the process of moving or combining a sequence of commits
-                                            to a new base commit.<br />
-
+                                        ● Which database is right for you?<br />
+                                        Here confusion arises. Which Database is best for your software?
+                                        No perfect yes/no answer available for this question. You can keep in
+                                        mind these points and can choose the right one.
+                                        <br />
+                                        ○ Concepts:-<br />
+                                        ■ ACID compliance- Atomicity, Consistency, Isolation
+                                        and Durability.
+                                        <br />
+                                        ● Atomicity means a transaction either completes
+                                        or fails in entirety. There is no state in between.
+                                        Nobody sees a partial completion of a
+                                        transaction.<br />
+                                        ● Consistency means the transaction leaves the
+                                        database in the valid state.<br />
+                                        ● Isolation means no two transactions mingle or
+                                        interfere with each other. The result of two
+                                        transactions executed in parallel would be
+                                        same as sequential execution.<br />
+                                        ● Durability means the changes of the transaction
+                                        are saved. It remains there even if power is
+                                        turned off.<br />
 </p>
-                                  
+                                <p>
+                                    ■ Consistency (strict versus eventual).<br />
+                                    ● Strong - Instance Update<br />
+                                    E.g - bank transitions<br />
+                                    ● Eventual - takes time to reflect<br />
+                                    E.g - Social media posting.<br />
+                                    Consistency - SQL Strong, NoSQL- Eventual/
+                                    Strong<br />
+
+                                </p>
+                                  <p>
+                                      ○ Considerations:-<br />
+                                      ■ Scale<br />
+                                      ■ structure of your data<br />
+                                      ■ Type of business<br />
+                                      ■ Consistency requirement<br />
+                                      ■ ACIDicity of the application<br />
+                                      ○ Often, this means a big software system might use multiple
+                                      data sources for different purposes.<br />
+
+                                  </p>
+                                <p>
+                                    ● Data partitioning- Dividing data across databases and tables.<br />
+                                    ○ Vertical partitioning:- ‘not vertical scaling’. Normalization.
+                                    Splitting data into tables based on different features etc.
+                                    Mostly application logic. To send different data to different
+
+                                    databases. Like store all images in db1 store all videos in
+                                    db2 etc.<br />
+                                    ○ Horizontal partitioning:- splitting rows into different tables
+                                    based on a sharing logic. Data sharing. Phone number
+                                    based sharing, date based sharing etc. Hash based
+                                    sharding etc. In many nosql databases, sharding is a
+                                    first-class concept, and the database knows how to store
+                                    and retrieve data within a cluster. Almost all modern
+                                    databases are natively sharded. Cassandra, HBase,
+                                    HDFS, and MongoDB are popular distributed databases<br />
+                                    ■ Cross partition queries are costly. So you need to be
+                                    very careful here.<br />
+                                    ■ Uneven distribution of data is very much a possibility.<br />
+                                </p>
+
+                                <p>
+                                    ● How to talk to databases <br />
+                                    ○ SQL for RDBMS databases.<br />
+                                    ■ Types<br />
+                                    1. DDL- data definition language- create, alter,
+                                    drop table/schema objects <br />
+
+                                    2. DML- data manipulation language-
+                                    insert/update/delete/select <br />
+
+                                    3. Transaction Control Statements -
+                                    commit/rollback etc. <br />
+
+                                    ■ Joins select a.x, b.y from a inner join b on a.z=b.z1 <br />
+                                    1. Inner join (intersection)- both tables should
+                                    have data<br />
+                                    2. Left join - all of left+matching right<br />
+                                    3. Right join<br />
+                                    4. Full join - union<br />
+                                    5. Self join<br />
+                                    ■ Good sql vs bad sql<br />
+                                    1. Analyze function<br />
+                                    2. Have enough indexes<br />
+                                    3. Deadlocks from procedures/functions.<br />
+
+                                    1. T1 update table X where I’d=1; T2 update
+                                    table Y where I’d=1 <br />
+                                    2. T1 update table Y where I’d=1; T2 update
+                                    table X <br />
+                                    3. Database auto recovers by aborting one
+                                    transaction.<br />
+                                    1. Keep Short transaction<br />
+                                    2. Access order make similar in both
+                                    transactions<br />
+                                    3. Try catch <br />
+                                </p>
+                                <p>
+                                    ■ ORM versus Native- How does a programming
+                                    language talk to database?<br />
+                                    1. JDBC- driver for every type of databases.
+                                    Create connection and send native SQL.
+                                    Maintain connection and other stuff on your
+                                    own.<br />
+                                    2. ORM- hibernate- maps tables to java objects
+                                    and creates a layer. Programmer deals with
+                                    objects and the framework converts to Query
+                                    language and deals with it. Easy to use. Difficult
+                                    to debug in complex cases. Complex sqls are
+                                    difficult.<br />
+                                </p>
+                                <p>
+                                    ○ no sql databases<br />
+                                    1. Each database has its own syntax.<br />
+                                    2. Some are sql like<br />
+                                    3. Some are just get(key). Put(key) format<br />
+                                    4. Use a driver, create connection. Insert collection, get
+                                    etc. MongoDb.<br />
+                                </p>
+
+                                <p>
+                                    ● DevOps and databases<br />
+                                    ○ Monitoring. Logs, slowness, deadlock detection<br />
+                                    ○ Design decisions, which database to choose. how
+                                    manageable are they<br />
+                                    ○ Sharding and scalability<br />
+                                    ○ DBA is getting obsolete- self driving database by Oracle<br />
+                                </p>
+                                <p>
+                                    ○ Micro services and databases<br />
+                                    ■ Multiple database/ One database multiple schema/
+                                    Never allow shared tables.<br />
+                                    ■ Zero down time upgrades.<br />
+                                    ■ Database code reviews.<br />
+                                    ■ Upgrade/ Roll back, or backward compatible
+                                    approach.<br />
+                                    ■ Move away from the culture of procedures and
+                                    functions.<br />
+                                </p>
                                     <!--shared-socio end-->
                                 </div><!--project-description end-->
                                 <div id="disqus_thread"></div>
