@@ -5,6 +5,9 @@
 	.vector-img > img {width: 100%;}
 	.main-banner.style3 {padding: 340px 0 360px;}
 	.banner-bg10 {background-position: 190%;}
+     .socio-links {
+font-size : 17px;
+    }
 }
 
 @media (max-width: 1550px) {
@@ -12,6 +15,9 @@
 	.banner-bg2 {background-position: 60%;}
 	.vg-img {right: -60px;}
 	.banner-bg10 {background-position: 300%;}
+       .socio-links {
+font-size : 17px;
+    }
 }
 
 @media (max-width: 1366px) {
@@ -42,6 +48,9 @@
 	.vg-img {right: 0;}
 	.latest-works-section .row {margin: 0;}
 	.services_section.contact-v .row {margin: 0;}
+       .socio-links {
+font-size : 15px;
+    }
 }
 
 
@@ -157,6 +166,9 @@
 	.appt-content {padding: 60px 50px;}
 	.vgg-img > img {width: 100%;}
 	.responsive-mobile-menu {width: 100%;}
+       .socio-links {
+font-size : 14px;
+    }
 }
 
 
@@ -420,6 +432,9 @@
 	.vgg-img {display: none;}
 	.ml-auto-sm {margin-left: auto;}
 	.responsive-mobile-menu {padding: 50px 100px;}
+       .socio-links {
+font-size : 13px;
+    }
 }
 
 
@@ -510,6 +525,9 @@
 	.testimonial-section-eight .slick-prev, .testimonial-section-eight .slick-next {font-size: 26px;}
 	.abt-img {margin-bottom: 30px;margin-top: 0;}
 	.socio-links {display: flex;}
+    .socio-links {
+font-size : 13px;
+    }
 	.oct-sec-text > p {padding: 0;}
 	.oct-sec-text > h2 {font-size: 30px;line-height: 48px;}
 	.single-post .blog-posts-list {margin-bottom: 80px;}
@@ -778,6 +796,9 @@
 	.blog-info-post blockquote {padding-left: 0;padding-top: 70px;}
 	.blog-info-post blockquote:before {left: 50%;transform: translateX(-50%);}
 	.filters-nav li {margin-right: 0;width: 100%;}
+  .socio-links {
+font-size : 30px;
+    }
 }
 
 
@@ -1024,4 +1045,7 @@
 	.shop-infos-list {margin-bottom: 30px;}
 	.masonary-layout .full-bt {margin-top: 60px;}
 	.toggle-item > h2 {font-size: 16px;}
+       .socio-links {
+font-size : 20px;
+    }
 }
