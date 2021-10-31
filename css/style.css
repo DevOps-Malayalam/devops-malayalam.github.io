@@ -1,14 +1,4 @@
 
-/*----------------------------------------------------
-Template    : Octavian - Multipurpose Creative HTML5 Template
-@Author		: TexTheme
-@URL	    : https://themeforest.net/user/textheme/
-Version	    : 1.1
-
-This file contains the styling for the actual template, this
-is the file you need to edit to change the look of the
-template.
----------------------------------------------------- */
 
 
 /*** ======= // TABLE OF CONTENT // ============================
@@ -803,7 +793,7 @@ header nav ul ul {
 	position: absolute;
 	top: 100%;
 	left: 0;
-	width: 270px;
+	width: 340px;
 	background-color: #fff;
 	padding: 27px 0 30px;
 	box-shadow: 0 0 30px rgba(57,62,70,0.15);
